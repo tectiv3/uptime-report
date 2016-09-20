@@ -1,10 +1,6 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+import time
 
-import urllib
+while True:
+	print "Hello IoT from isaax"
+	time.sleep(5)
 
-url='http://127.0.0.1:48080/v1/ping' # isaaxd server ping request
-req=urllib.urlopen(url)
-print("Hello, Isaax! status code:", req.getcode())
-
-print("Bye!")

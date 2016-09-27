@@ -6,7 +6,7 @@
   "author": "",
   "license": "",
   "scripts": {
-     "start": "python app.py"
+     "start": "python -u app.py"
     },
    "dependency": null
 }

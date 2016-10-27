@@ -5,6 +5,7 @@
   "main": "app.py",
   "author": "",
   "license": "",
+  "language":"python",
   "scripts": {
      "start": "python -u app.py"
     },

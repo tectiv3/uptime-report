@@ -1,4 +1,4 @@
-import time, os
+import time, os, socket
  
 #----------------------------------------
 # Gives a human-readable uptime string
@@ -38,6 +38,6 @@ def uptime():
  
 
 while True:
-	print(uptime())
+	print(socket.gethostname(), " uptime is ", uptime())
 	time.sleep(60*60)
 

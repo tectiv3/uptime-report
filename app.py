@@ -38,6 +38,6 @@ def uptime():
  
 
 while True:
-	print(socket.gethostname(), " uptime is ", uptime())
+	print(socket.gethostname() + " uptime is " + uptime())
 	time.sleep(60*60)
 

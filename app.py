@@ -9,7 +9,7 @@ def uptime():
          contents = f.read().split()
          f.close()
      except:
-        return "Cannot open uptime file: /proc/uptime"
+        return "cannot open uptime file: /proc/uptime"
  
      total_seconds = float(contents[0])
  

@@ -3,6 +3,7 @@ import time, os, socket
 #----------------------------------------
 # Gives a human-readable uptime string
 def uptime():
+
       try:
          f = open( "/proc/uptime" )
          contents = f.read().split()

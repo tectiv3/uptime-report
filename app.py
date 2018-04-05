@@ -1,5 +1,5 @@
-import time, os, socket
- 
+import time, os, socket, subprocess, datetime
+
 #----------------------------------------
 # Gives a human-readable uptime string
 def uptime():
@@ -11,10 +11,10 @@ def uptime():
         f.close()
     except:
         try:
-            f = open( "sysctl -n kern.boottime | cut -c14-18" )
-            total_seconds = float(f.read())
-            f.close()
-        except:
+            result = subprocess.run(["sysctl -n kern.boottime | cut -c9-18"], shell=True, stdout=subprocess.PIPE)
+            total_seconds = datetime.datetime.utcnow().timestamp() - int(result.stdout)
+        except Exception as e:
+            print(e)
             return "cannot open uptime file: /proc/uptime"
  
     # Helper vars:

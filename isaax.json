@@ -1,13 +1,13 @@
 {
-  "name": "python-app",
+  "name": "uptime-reporter",
   "version": "",
-  "description": "python - raspberry-pi",
+  "description": "",
   "main": "app.py",
   "author": "",
   "license": "",
   "language":"python",
   "scripts": {
-     "start": "python -u app.py"
+     "start": "python3 -u app.py"
     },
    "dependency": null
 }

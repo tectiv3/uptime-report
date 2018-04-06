@@ -2,12 +2,12 @@
   "name": "uptime-reporter",
   "version": "",
   "description": "",
-  "main": "app.py",
-  "author": "",
-  "license": "",
-  "language":"python",
+  "main": "busybox",
+  "author": "tectiv3",
+  "license": "mit",
+  "language":"bash",
   "scripts": {
-     "start": "python3 -u app.py"
+     "start": "/system/sdcard/bin/busybox uptime"
     },
    "dependency": null
 }

@@ -8,7 +8,7 @@ def uptime():
         result = subprocess.run(["systeminfo"], shell=True, stdout=subprocess.PIPE)
         m = re.search("System Boot Time:\s+([^\\\\]+)\\\\r", str(result.stdout))
         if not m:
-	    return "unknown"
+            return "unknown"
         #print("RESULT:", m.groups()[0])
         timestamp = datetime.datetime.strptime(m.groups()[0], "%m/%d/%Y, %I:%M:%S %p").timestamp()
         total_seconds = datetime.datetime.utcnow().timestamp() - timestamp

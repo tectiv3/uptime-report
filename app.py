@@ -13,7 +13,7 @@ def uptime():
         timestamp = datetime.datetime.strptime(m.groups()[0], "%m/%d/%Y, %I:%M:%S %p").timestamp()
         total_seconds = datetime.datetime.utcnow().timestamp() - timestamp
     except Exception as e:
-	print(e)
+        print(e)
         return str(e)
 
     # Helper vars:
